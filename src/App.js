@@ -1,18 +1,20 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
+
 import './App.css';
+import Masthead from './Masthead';
+import logo from './static/img/logo.svg';
+
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to Charon SSG</h1>
-        </header>
-        <p className="App-intro">
-          This will be our wonderful website.
-        </p>
+        <div className="custom-navbar">
+            <div className="brand">
+                <h1><img className="logo" alt="Charon Special Situations Group" src={logo}/>Charon SSG</h1>
+            </div>
+        </div>        
+        <Masthead />
       </div>
     );
   }
