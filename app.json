@@ -1,0 +1,8 @@
+{
+  "name": "charon-ssg",
+  "description": "The website for Charon SSG, contains information about the group, publications, and contact information",
+  "repository": "https://github.com/adachille/Charon-SSG",
+//  "logo": "https://cdn.rawgit.com/heroku/node-js-getting-started/master/public/node.svg",
+  "keywords": ["Charon", "SSG", "Charon Special Situations Group", "Investing"],
+  "image": "heroku/nodejs"
+}
