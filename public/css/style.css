@@ -573,15 +573,23 @@ header {
     position: absolute;
     left: 0px;
     right: 0px;
-    top: 50%;
-    -webkit-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
-    text-align: center;
+    bottom: 0px;
 }
-
-.home-content button {
-  margin-top: 20px;
+.home-content .overlay{
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    opacity: .3;
+    background: #111111;
+}
+.home-content {
+    color: white;
+    padding-top: 1rem;
+}
+.home-content .masthead-text {
+    z-index: 10;
 }
 
 .header-wrapper h2 {
@@ -1494,10 +1502,6 @@ header {
   .main-btn , .default-btn , .outline-btn , .white-btn  {
   		padding: 8px 22px;
   		font-size:14px;
-	}
-
-  .home-content h1 {
-		font-size:36px;
 	}
 
   .header-wrapper h2 {
