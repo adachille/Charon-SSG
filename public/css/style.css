@@ -586,7 +586,10 @@ header {
 }
 .home-content {
     color: white;
-    padding-top: 1rem;
+}
+.home-content p {
+    margin-top: 2rem !important;
+    margin-bottom: 2rem !important;
 }
 .home-content .masthead-text {
     z-index: 10;
