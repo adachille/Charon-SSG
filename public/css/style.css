@@ -343,6 +343,9 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focu
     .main-nav>li>a:hover:after, .main-nav>li.active>a:after {
         width: 100%;
     }
+    .first-team {
+        margin-left: 4.166666665%;
+    }
     /* dropdown */
     .has-dropdown {
         position: relative;
@@ -581,7 +584,7 @@ header {
     top: 0;
     right: 0;
     bottom: 0;
-    opacity: .3;
+    opacity: .5;
     background: #111111;
 }
 .home-content {
@@ -1046,10 +1049,14 @@ header {
     opacity: 0.8;
 }
 
-.team .team-content {
-    text-align: center;
+.team .team-content .heading {
     position: relative;
     z-index: 11;
+}
+
+.team .team-content .team-heading {
+    text-align: center;    
+    margin-bottom: 1.5rem;
 }
 
 .team .team-content h3 {
