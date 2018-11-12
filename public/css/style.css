@@ -53,7 +53,7 @@ h1, h2, h3, h4, h5, h6 {
     font-family: 'Sylfaen', serif;
     font-weight: 400;
     margin-top: 0px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     color: #10161A;
 }
 
@@ -115,19 +115,15 @@ ul, ol {
     list-style: none
 }
 
+.round-img {
+    border-radius: 100%;
+}
+
 /* -- section  -- */
 
 .section {
     position: relative;
     height: 100%;
-}
-
-.md-padding {
-    padding-top: 100px;
-    padding-bottom: 100px;
-}
-
-.sm-padding {
     padding-top: 60px;
     padding-bottom: 60px;
 }
@@ -175,7 +171,7 @@ ul, ol {
 
 .section-header {
     position: relative;
-    margin-bottom: 60px;
+    margin-bottom: 30px;
 }
 
 .section-header .title {
@@ -192,7 +188,7 @@ ul, ol {
 }
 
 .text-center .title:after {
-    margin: 20px auto 0px;
+    margin: 10px auto 0px;
 }
 
 /* --  Input  -- */
@@ -344,7 +340,7 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focu
         width: 100%;
     }
      .first-team {
-        margin-left: 12.5%;
+        margin-left: 4.166%;
     } 
     /* dropdown */
     .has-dropdown {
@@ -998,6 +994,9 @@ header {
 /*------------------------------------*\
 	Team
 \*------------------------------------*/
+.team-overview {
+    margin-bottom: 2rem;
+}
 
 .team {
     position: relative;
@@ -1034,7 +1033,6 @@ header {
 }
 
 .team .overlay {
-    background: #1C1D21;
     position: absolute;
     bottom: 0;
     left: 0;
@@ -1046,7 +1044,7 @@ header {
 }
 
 .team:hover .overlay {
-    opacity: 0.8;
+    opacity: 1;
 }
 
 .team .team-content .heading {
@@ -1072,14 +1070,6 @@ header {
     transition: 0.2s color;
 }
 
-.team:hover .team-content h3 {
-    color: #FFF;
-}
-
-.team:hover .team-content span {
-    color: #6195FF;
-}
-
 .team .team-social {
     position: absolute;
     top: 0;
@@ -1100,6 +1090,22 @@ header {
 
 .team:hover .team-social {
     opacity: 1;
+}
+
+@media only screen and (min-width: 1200px) {
+    .team .team-content .team-description {
+        height: 18rem;
+    }
+}
+@media only screen and (min-width: 1000px) and (max-width: 1200px) {
+    .team .team-content .team-description {
+        height: 22.5rem;
+    }
+}
+@media only screen and (min-width: 767px) and (max-width: 1000px) {
+    .team .team-content .team-description {
+        height: 33rem;
+    }
 }
 
 
