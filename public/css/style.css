@@ -114,8 +114,8 @@ ul, ol {
 .section {
     position: relative;
     height: 100%;
-    padding-top: 60px;
-    padding-bottom: 60px;
+    padding-top: 100px;
+    padding-bottom: 100px;
 }
 
 
@@ -187,7 +187,7 @@ input[type="text"], input[type="email"], input[type="password"], input[type="num
     height: 40px;
     width: 100%;
     border: none;
-	  background: #F4F4F4;
+    background: #F4F4F4;
     border-bottom: 2px solid #EEE;
     color: #354052;
     padding: 0px 10px;
@@ -329,9 +329,7 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focu
     .main-nav>li>a:hover:after, .main-nav>li.active>a:after {
         width: 100%;
     }
-     .first-team {
-        margin-left: 4.166%;
-    } 
+
     /* dropdown */
     .has-dropdown {
         position: relative;
@@ -606,6 +604,7 @@ header {
 /*------------------------------------*\
 	Team
 \*------------------------------------*/
+
 .team-overview {
     margin-bottom: 2rem;
 }
@@ -614,7 +613,8 @@ header {
     position: relative;
     background-color: #F4F4F4;
     padding: 40px 20px;
-    margin: 15px 0px;
+    margin-top: 15px;
+    margin-bottom: 15px;
 }
 
 .team::after {
@@ -636,8 +636,9 @@ header {
 
 .team-img {
     position: relative;
-    margin-bottom: 20px;
+    display: inline-block;
     z-index: 11;
+    margin-bottom: 15px;
 }
 
 .team-img>img {
@@ -657,6 +658,11 @@ header {
 
 .team:hover .overlay {
     opacity: 1;
+}
+
+.team-content {
+    padding-right: 0;
+    padding-left: 0;
 }
 
 .team .team-content .heading {
@@ -704,19 +710,25 @@ header {
     opacity: 1;
 }
 
-@media only screen and (min-width: 1200px) {
+/* @media only screen and (min-width: 1200px) {
     .team .team-content .team-description {
         height: 18rem;
     }
-}
+} */
 @media only screen and (min-width: 1000px) and (max-width: 1200px) {
     .team .team-content .team-description {
-        height: 22.5rem;
+        height: 21rem;
+    }
+    .first-team {
+        margin-left: 4.16%
     }
 }
 @media only screen and (min-width: 767px) and (max-width: 1000px) {
     .team .team-content .team-description {
-        height: 33rem;
+        height: 28.5rem;
+    }
+    .first-team {
+        margin-left: 4.16%
     }
 }
 
