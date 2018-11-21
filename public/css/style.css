@@ -118,11 +118,17 @@ ul, ol {
     padding-bottom: 100px;
 }
 .section-description {
-    margin-bottom: 2rem;
+    margin-bottom: 3rem;
+}
+.section-description-txt {
+    margin-bottom: 3rem;
 }
 .subsection-header h3 {
     color: #6195FF;
-    margin-bottom: 30px;
+    margin-bottom: 3rem;
+}
+.subsection {
+    margin: 3rem 0;
 }
 
 
@@ -610,7 +616,7 @@ header {
 
 .team {
     position: relative;
-    background-color: #F4F4F4;
+    background-color: white;
     padding: 40px 20px;
     margin-top: 15px;
     margin-bottom: 15px;
@@ -688,25 +694,20 @@ header {
 }
 
 .team .team-social {
-    position: absolute;
-    top: 0;
-    right: 0;
-    opacity: 0;
     -webkit-transition: 0.2s opacity;
     transition: 0.2s opacity;
 }
-
 .team .team-social a {
     display: block;
+    margin: auto;
     line-height: 50px;
     width: 50px;
     text-align: center;
     background-color: #6195FF;
     color: #FFF;
 }
-
-.team:hover .team-social {
-    opacity: 1;
+.team-social:hover {
+    opacity: .7;
 }
 
 /* @media only screen and (min-width: 1200px) {
@@ -742,7 +743,6 @@ header {
 }
 
 .discipline-book-btn {
-    margin: auto;
     background-color: rgb(23,54,93) !important;
 }
 
@@ -791,7 +791,7 @@ header {
 
 @media only screen and (min-width: 1000px) and (max-width: 1200px) {
     .publications .publications-content {
-        height: 36rem;
+        height: 39rem;
     }
 }
 @media only screen and (max-width: 1000px) {
