@@ -796,7 +796,7 @@ header {
 }
 @media only screen and (max-width: 1000px) {
     .publications .publications-content {
-        height: 27rem;
+        height: 31.5rem;
     }
 }
 
@@ -869,6 +869,7 @@ header {
   border-radius: 3px;
   background-color: #6195FF;
   color:#FFF;
+  margin-right: 1.5rem;
 }
 
 .footer-copyright p {
