@@ -126,7 +126,7 @@ ul, ol {
     margin-bottom: 3rem;
 }
 .subsection {
-    margin: 3rem 0;
+    margin-bottom: 3rem;
 }
 
 
@@ -292,7 +292,7 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focu
     position: fixed;
     left: 0;
     right: 0;
-    padding: 1rem 2rem;
+    padding: 0.5rem 2rem;
     background-color: #FFF !important;
     border-bottom: 1px solid #EEE;
 }
