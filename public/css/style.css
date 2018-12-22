@@ -31,7 +31,7 @@ Table Of Contents
 /* -- typography -- */
 body {
     font-family: 'Varela Round', sans-serif;
-    font-size: 16px;
+    font-size: 14px;
     line-height: 1.6;
     overflow-x: hidden;
     color: #868F9B;
@@ -46,19 +46,19 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-    font-size: 5rem;
+    font-size: 4.8rem;
 }
 
 h2 {
-    font-size: 3.5rem;
+    font-size: 3.0rem;
 }
 
 h3 {
-    font-size: 2.5rem;
+    font-size: 2.0rem;
 }
 
 h4 {
-    font-size: 2rem;
+    font-size: 1.6rem;
 }
 
 h5 {
@@ -256,7 +256,7 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focu
 }
 
 .navbar-brand .logo, .navbar-brand .logo-alt {
-    max-height: 50px;
+    max-height: 45px;
     display: block;
 }
 
@@ -292,7 +292,7 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focu
     position: fixed;
     left: 0;
     right: 0;
-    padding: 0.5rem 2rem;
+    padding: 0.5rem 2rem 0 2rem;
     background-color: #FFF !important;
     border-bottom: 1px solid #EEE;
 }
@@ -309,13 +309,13 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focu
         padding: 0px 15px;
     }
     .main-nav li a {
-        font-size: 16px;
+        font-size: 15px;
         -webkit-transition: 0.2s color;
         transition: 0.2s color;
     }
     .main-nav>li>a {
         color: #10161A;
-        padding: 15px 0px;
+        padding: 10px 0px;
     }
     /* #nav.nav-transparent:not(.fixed-nav) .main-nav>li>a {
         color: #fff;
