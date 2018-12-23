@@ -17,6 +17,7 @@ app.use(bodyParser.json());       // to support JSON-encoded bodies
 app.use(bodyParser.urlencoded({     // to support URL-encoded bodies
   extended: true
 }));
+console.log(process.env.CSSG_EMAIL_PW);
 var transporter = nodemailer.createTransport({
   service: 'gmail',
   auth: {
