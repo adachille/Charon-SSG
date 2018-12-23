@@ -21,8 +21,7 @@ var transporter = nodemailer.createTransport({
   service: 'gmail',
   auth: {
          user: 'charonssg@gmail.com',
-         pass: 'Merl256@'
-         //  pass: process.env.CSSG_EMAIL_PW
+         pass: process.env.CSSG_EMAIL_PW
      }
 });
 // Set up the route handler
