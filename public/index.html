@@ -167,6 +167,9 @@
 							<div class="weekly-recap">
 								<a href="./publications/weekly-recaps/recap-2018-12-02.pdf" target="_blank">12/02/2018</a>
 							</div>
+							<div class="weekly-recap">
+								Temporarily Discontinued
+							</div>
 						</div>
 					</div>
 					<!-- /weekly recap december-->
@@ -311,12 +314,12 @@
 
 				<!-- contact form -->
 				<div class="col-md-8 col-md-offset-2">
-					<form class="contact-form">
-						<input type="text" class="input" placeholder="Name">
-						<input type="email" class="input" placeholder="Email">
-						<input type="text" class="input" placeholder="Subject">
-						<textarea class="input" placeholder="Message"></textarea>
-						<button class="main-btn">Send message</button>
+					<form class="contact-form" action="contact" id="contact-form" method="post" name="contact-form">
+						<input type="text" class="input" placeholder="Name" name="name">
+						<input type="email" class="input" placeholder="Email" name="email">
+						<input type="text" class="input" placeholder="Subject" name="subject">
+						<textarea type="text" class="input" placeholder="Message" name="msg"></textarea>
+						<input class="main-btn" id="send" name="submit" type="submit" value="Send Message">
 					</form>
 				</div>
 				<!-- /contact form -->
