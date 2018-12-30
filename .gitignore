@@ -14,3 +14,7 @@ npm-debug.log
 Dockerfile
 docker-compose.yml
 
+# Certificates
+.certificates/
+certificates/
+
