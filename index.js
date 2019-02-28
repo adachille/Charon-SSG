@@ -40,7 +40,7 @@ app.post('/contact', function(req, res) {
   };
 
   // added function
-  transporter.sendMail(mailOptions, function(error, info) => {
+  transporter.sendMail(mailOptions, function(error, info) {
     // Add error status if not sent
     if (error) {
         return console.log(error);
