@@ -117,6 +117,7 @@ ul, ol {
 }
 .section-description {
     margin-bottom: 3rem;
+    text-align: center;
 }
 .section-description-txt {
     margin-bottom: 3rem;
@@ -179,7 +180,8 @@ ul, ol {
     content:"";
   	display:block;
   	height:4px;
-  	width:40px;
+  	/* width:40px; */
+    width:80px;
   	background-color: #6195FF;
     margin-top: 20px;
 }
@@ -195,7 +197,8 @@ input[type="text"], input[type="email"], input[type="password"], input[type="num
     width: 100%;
     border: none;
     background: #FFF;
-    border-bottom: 2px solid #EEE;
+    /* border-bottom: 2px solid #EEE; */
+    border: 1px solid #CAC9C9;
     color: #354052;
     padding: 0px 10px;
     opacity: 0.5;
@@ -277,6 +280,7 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focu
 #nav {
     padding: 10px 0px;
     background: #FFF;
+    /* background: rgba(255,255,255,0.7); */
     -webkit-transition: 0.2s padding;
     transition: 0.2s padding;
     z-index: 999;
@@ -293,8 +297,8 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focu
     left: 0;
     right: 0;
     padding: 0.5rem 2rem 0 2rem;
-    background-color: #FFF !important;
-    border-bottom: 1px solid #EEE;
+    /* background-color: #FFF !important; */
+    /* border-bottom: 1px solid #EEE; */
 }
 
 /* #nav.nav-transparent {
@@ -415,7 +419,7 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focu
     .main-nav {
         position: fixed;
         right: 0;
-        height: calc(100vh - 80px);
+        /* height: calc(100vh - 80px); */
         -webkit-box-shadow: 0px 80px 0px 0px #1C1D21;
         box-shadow: 0px 80px 0px 0px #1C1D21;
         max-width: 200px;
@@ -492,7 +496,8 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focu
     position: relative;
     float: right;
     width: 40px;
-    height: 40px;
+    /* height: 40px; */
+    height: 35px;
     margin-top: 5px;
     margin-right: 5px;
     cursor: pointer;
@@ -580,6 +585,7 @@ header {
 }
 .home-content {
     color: white;
+    text-align: center;
 }
 .home-content p {
     margin-top: 2rem !important;
@@ -614,6 +620,7 @@ header {
 
 .team {
     position: relative;
+    display: inline-block;
     background-color: white;
     padding: 40px 20px;
     margin-top: 15px;
@@ -621,8 +628,8 @@ header {
 }
 
 .team::after {
-    content: "";
-    background-color: #1C1D21;
+    /* content: ""; */
+    /* background-color: #1C1D21; */
     position: absolute;
     left: 0;
     right: 0;
@@ -639,13 +646,16 @@ header {
 
 .team-img {
     position: relative;
-    display: inline-block;
+    /* display: inline-block; */
+    display: flex;
+    justify-content: center;
     z-index: 11;
     margin-bottom: 15px;
 }
 
 .team-img>img {
-  width: 100%;
+  width: 50%;
+  height:50%;
 }
 
 .team .overlay {
@@ -674,7 +684,7 @@ header {
 }
 
 .team .team-content .team-heading {
-    text-align: center;    
+    text-align: center;
     margin-bottom: 1.5rem;
 }
 
@@ -697,22 +707,30 @@ header {
 }
 .team .team-social a {
     display: block;
-    margin: auto;
-    line-height: 50px;
-    width: 50px;
+    /* margin: 0 auto; */
+    margin-top: 4px;
+    /* line-height: 50px; */
+    line-height: 30px;
+    /* width: 50px; */
+    width:30px;
+    height: 30px;
     text-align: center;
     background-color: #6195FF;
     color: #FFF;
+    border-radius: 4px;
 }
 .team-social:hover {
     opacity: .7;
 }
-
-/* @media only screen and (min-width: 1200px) {
+.team-description {
+    margin: 4px;
+    text-align: center;
+}
+@media only screen and (min-width: 1200px) {
     .team .team-content .team-description {
         height: 18rem;
     }
-} */
+}
 @media only screen and (min-width: 1000px) and (max-width: 1200px) {
     .team .team-content .team-description {
         height: 21rem;
@@ -729,7 +747,11 @@ header {
         margin-left: 4.16%
     }
 }
-
+.img-square{
+    border-radius: 4px;
+    width: 200px;
+    height: 200px;
+}
 
 /*------------------------------------*\
 	Publications
@@ -753,7 +775,7 @@ header {
     padding-right: 20px;
     padding-bottom: 20px;
     padding-left: 20px;
-    height: 31.5rem;
+    /* height: 31.5rem; */
 }
 
 .publications .publications-meta {
@@ -786,15 +808,14 @@ header {
     text-align: center;
     padding: 5px 0;
 }
-
 @media only screen and (min-width: 1000px) and (max-width: 1200px) {
     .publications .publications-content {
-        height: 39rem;
+        /* height: 39rem; */
     }
 }
 @media only screen and (max-width: 1000px) {
     .publications .publications-content {
-        height: 31.5rem;
+        /* height: 31.5rem; */
     }
 }
 
@@ -837,6 +858,9 @@ header {
 
 #footer {
     position: relative;
+    padding-bottom: 10px;
+    /* background-color: #6195FF; */
+    /* color: #FFFFFF; */
 }
 
 .footer-logo {
@@ -860,12 +884,12 @@ header {
 
 .footer-follow li a {
   display: inline-block;
-  width: 50px;
-  height: 50px;
-  line-height: 50px;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
   text-align: center;
   border-radius: 3px;
-  background-color: #6195FF;
+  background-color: rgb(23,54,93);
   color:#FFF;
   margin-right: 1.5rem;
 }
@@ -876,7 +900,9 @@ header {
     text-transform: uppercase;
     margin: 0;
 }
-
+.footer-disclaimer {
+    margin-bottom: 20px;
+}
 
 /*------------------------------------*\
 	Responsive
@@ -888,6 +914,7 @@ header {
 @media only screen and (max-width: 767px) {
   .section-header h2.title {
   		font-size:31.5px;
+
 	}
 
   .main-btn , .default-btn , .outline-btn , .white-btn  {
@@ -1069,3 +1096,7 @@ header {
             transform:scale(0);
   }
 }
+
+/*------------------------------------*\
+	Grid
+\*------------------------------------*/

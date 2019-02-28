@@ -28,8 +28,10 @@ var transporter = nodemailer.createTransport({
 app.post('/contact', function(req, res) {
   // setup email data with unicode symbols
   let mailOptions = {
-    from: `"${req.body.name}" <${req.body.email}>`, // sender address
-    to: `charonssg@gmail.com`, // list of receivers
+    // from: `"${req.body.name}" <${req.body.email}>`, // sender address
+    from:`${req.body.email}`,
+    // to: `charonssg@gmail.com`, // list of receivers
+    to: 'charonssg@gmail.com',
     subject: `${req.body.subject}`, // Subject line
     html: `<h4>From: ${req.body.name}</h4>
       <h4>Email: ${req.body.email}</h4>
@@ -37,7 +39,8 @@ app.post('/contact', function(req, res) {
       <p>${req.body.msg}</p>`, // html of email
   };
 
-  transporter.sendMail(mailOptions, (error, info) => {
+  // added function
+  transporter.sendMail(mailOptions, function(error, info) => {
     // Add error status if not sent
     if (error) {
         return console.log(error);
@@ -48,5 +51,5 @@ app.post('/contact', function(req, res) {
 });
 
 app.listen(PORT, () => console.log(`Listening on ${ PORT }`));
- 
+
 module.exports = app;
