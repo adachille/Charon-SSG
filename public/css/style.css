@@ -280,7 +280,6 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focu
 #nav {
     padding: 10px 0px;
     background: #FFF;
-    /* background: rgba(255,255,255,0.7); */
     -webkit-transition: 0.2s padding;
     transition: 0.2s padding;
     z-index: 999;
@@ -297,8 +296,8 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focu
     left: 0;
     right: 0;
     padding: 0.5rem 2rem 0 2rem;
-    /* background-color: #FFF !important; */
-    /* border-bottom: 1px solid #EEE; */
+    background-color: #FFF !important;
+    border-bottom: 1px solid #EEE;
 }
 
 /* #nav.nav-transparent {
@@ -647,16 +646,16 @@ header {
 .team-img {
     position: relative;
     /* display: inline-block; */
-    display: flex;
+    /* display: flex; */
     justify-content: center;
     z-index: 11;
     margin-bottom: 15px;
 }
 
-.team-img>img {
+/* .team-img>img {
   width: 50%;
   height:50%;
-}
+} */
 
 .team .overlay {
     position: absolute;
@@ -724,7 +723,7 @@ header {
 }
 .team-description {
     margin: 4px;
-    text-align: center;
+    text-align: left;
 }
 @media only screen and (min-width: 1200px) {
     .team .team-content .team-description {
@@ -775,7 +774,10 @@ header {
     padding-right: 20px;
     padding-bottom: 20px;
     padding-left: 20px;
-    /* height: 31.5rem; */
+    height: 20rem;
+}
+.publication-download {
+    padding-bottom: 20px;
 }
 
 .publications .publications-meta {
@@ -808,14 +810,30 @@ header {
     text-align: center;
     padding: 5px 0;
 }
-@media only screen and (min-width: 1000px) and (max-width: 1200px) {
+@media only screen and (min-width: 991px) and (max-width: 1200px) {
     .publications .publications-content {
-        /* height: 39rem; */
+        height: 27rem;
     }
 }
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 991px) {
     .publications .publications-content {
-        /* height: 31.5rem; */
+        height: 23rem;
+    }
+}
+@media only screen and (max-width: 767px) {
+    .publications .publications-content {
+        height: 17rem;
+    }
+}
+@media only screen and (max-width: 480px) {
+    .publications .publications-content {
+        height: 21.5rem;
+    }
+}
+
+@media only screen and (max-width: 380px) {
+    .publications .publications-content {
+        height: 26rem;
     }
 }
 
