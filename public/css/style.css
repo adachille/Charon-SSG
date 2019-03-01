@@ -2,7 +2,7 @@
 Colors:
 	Body 		  : #868F9B
 	Headers 	: #10161A
-	Primary 	: rgb(50,79,153)
+	Primary 	: rgb(23,54,123)
 	Dark      : #FCFCFF
 	Grey 		  : #F4F4F4 #FAFAFA #EEE
 
@@ -66,7 +66,7 @@ h5 {
 }
 
 a {
-    color: rgb(50,79,153);
+    color: rgb(23,54,123);
     text-decoration: none;
     -webkit-transition: 0.2s opacity;
     transition: 0.2s opacity;
@@ -76,11 +76,11 @@ a:hover, a:focus {
     text-decoration: none;
     outline: none;
     opacity: 0.7;
-    color: rgb(50,79,153);
+    color: rgb(23,54,123);
 }
 
 .main-color {
-    color: rgb(50,79,153);
+    color: rgb(23,54,123);
 }
 
 .white-text {
@@ -88,12 +88,12 @@ a:hover, a:focus {
 }
 
 ::-moz-selection {
-    background-color: rgb(50,79,153);
+    background-color: rgb(23,54,123);
     color: #FFF;
 }
 
 ::selection {
-    background-color: rgb(50,79,153);
+    background-color: rgb(23,54,123);
     color: #FFF;
 }
 
@@ -123,7 +123,7 @@ ul, ol {
     margin-bottom: 3rem;
 }
 .subsection-header h3 {
-    color: rgb(50,79,153);
+    color: rgb(23,54,123);
     margin-bottom: 3rem;
 }
 .subsection {
@@ -182,7 +182,7 @@ ul, ol {
   	height:4px;
   	/* width:40px; */
     width:80px;
-  	background-color: rgb(50,79,153);
+  	background-color: rgb(23,54,123);
     margin-top: 20px;
 }
 
@@ -213,7 +213,7 @@ textarea {
 }
 
 input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focus, input[type="number"]:focus, input[type="date"]:focus, input[type="url"]:focus, input[type="tel"]:focus, textarea:focus {
-    border-color: rgb(50,79,153);
+    border-color: rgb(23,54,123);
     opacity: 1;
 }
 
@@ -228,7 +228,7 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focu
 }
 
 .main-btn {
-    background: rgb(50,79,153);
+    background: rgb(23,54,123);
     color: #FFF !important;
 }
 
@@ -239,8 +239,8 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focu
 
 .outline-btn {
     background: transparent;
-    color: rgb(50,79,153) !important;
-    border-color: rgb(50,79,153);
+    color: rgb(23,54,123) !important;
+    border-color: rgb(23,54,123);
 }
 
 .main-btn:hover, .white-btn:hover, .outline-btn:hover .btn:hover{
@@ -323,12 +323,12 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focu
     } */
     .main-nav>li>a:hover, .main-nav>li>a:focus, .main-nav>li.active>a {
         background: transparent;
-        color: rgb(50,79,153);
+        color: rgb(23,54,123);
     }
     .main-nav>li>a:after {
         content: "";
         display: block;
-        background-color: rgb(50,79,153);
+        background-color: rgb(23,54,123);
         height: 2px;
         width: 0%;
         -webkit-transition: 0.2s width;
@@ -358,7 +358,7 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focu
         position: absolute;
         right: -50%;
         top: 0;
-        background-color: rgb(50,79,153);
+        background-color: rgb(23,54,123);
         width: 200px;
         -webkit-box-shadow: 0px 5px 5px -5px rgba(53, 64, 82, 0.2);
         box-shadow: 0px 5px 5px -5px rgba(53, 64, 82, 0.2);
@@ -447,10 +447,10 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focu
         transition: 0.2s all;
     }
     .main-nav>li.active {
-        border-left: 6px solid rgb(50,79,153);
+        border-left: 6px solid rgb(23,54,123);
     }
     .main-nav li a:hover, .main-nav li a:focus {
-        background-color: rgb(50,79,153);
+        background-color: rgb(23,54,123);
         color: #FFF;
         opacity: 1;
     }
@@ -712,7 +712,7 @@ header {
     width:30px;
     height: 30px;
     text-align: center;
-    background-color: rgb(50,79,153);
+    background-color: rgb(23,54,123);
     color: #FFF;
     border-radius: 4px;
 }
@@ -760,7 +760,7 @@ header {
 }
 
 .discipline-book-btn {
-    background-color: rgb(50,79,153) !important;
+    background-color: rgb(23,54,123) !important;
 }
 
 .weekly-recap-row {
@@ -778,7 +778,7 @@ header {
     padding-bottom: 20px;
 }
 .publication-download>a {
-    background-color: rgb(50,79,153);
+    background-color: rgb(23,54,123);
 }
 
 .publications .publications-meta {
@@ -793,7 +793,7 @@ header {
 }
 
 .publications .publications-meta li i {
-    color: rgb(50,79,153);
+    color: rgb(23,54,123);
     margin-right: 5px;
 }
 .weekly-recap-section {
@@ -804,7 +804,7 @@ header {
     border-bottom: 1px solid #999999;
 }
 .weekly-recap-section-head h3 {
-    color: rgb(50,79,153);
+    color: rgb(23,54,123);
 }
 .weekly-recap {
     width: 100%;
@@ -849,7 +849,7 @@ header {
 
 .contact i {
     font-size: 36px;
-    color: rgb(50,79,153);
+    color: rgb(23,54,123);
     margin-bottom: 20px;
 }
 
@@ -878,7 +878,7 @@ header {
 #footer {
     position: relative;
     padding-bottom: 10px;
-    /* background-color: rgb(50,79,153); */
+    /* background-color: rgb(23,54,123); */
     /* color: #FFFFFF; */
 }
 
@@ -908,7 +908,7 @@ header {
   line-height: 30px;
   text-align: center;
   border-radius: 3px;
-  background-color: rgb(50,79,153);
+  background-color: rgb(23,54,123);
   color:#FFF;
   margin-right: 1.5rem;
 }
@@ -1012,7 +1012,7 @@ header {
   	height: 50px;
   	line-height: 50px;
   	text-align: center;
-  	background: rgb(50,79,153);
+  	background: rgb(23,54,123);
   	border-radius:3px;
   	color: #FFF;
   	z-index: 9999;
@@ -1055,7 +1055,7 @@ header {
 }
 .preloader span {
     display: inline-block;
-    background-color: rgb(50,79,153);
+    background-color: rgb(23,54,123);
     width: 25px;
     height: 25px;
     -webkit-animation: 1s preload ease-in-out infinite;
