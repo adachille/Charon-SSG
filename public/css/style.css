@@ -167,7 +167,18 @@ ul, ol {
     opacity: .2;
     background: #1C1D21;
 }
-
+.teamBg{
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    background-position: center;
+    /* background-size: cover; */
+    /* background-attachment: fixed; */
+    background-size: 1279px 400px;
+}
 
 /* --  section header  -- */
 
@@ -190,6 +201,31 @@ ul, ol {
     margin: 10px auto 0px;
 }
 
+/* -- Table -- */
+.table-head {
+    width:600px;
+}
+#table-container {
+    margin:6%;
+    width:95%;
+}
+table {
+    vertical-align: "top";
+    border:"0";
+    border-spacing: 1px;
+    padding:3px;
+}
+th, td {
+    border-collapse: collapse;
+    border-bottom: 1px solid;
+    padding: 10px 30px 10px 0px;
+    /* padding-right:10px; */
+    text-align: left;
+}
+#table-date {
+    valign:"top";
+    nowrap:"nowrap";
+}
 /* --  Input  -- */
 
 input[type="text"], input[type="email"], input[type="password"], input[type="number"], input[type="date"], input[type="url"], input[type="tel"], textarea {
@@ -560,12 +596,20 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focu
 header {
     position: relative;
 }
-
+#team-home {
+    height: 60vh;
+}
 #home {
     height: 100vh;
 }
 
 #home .home-wrapper {
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+}
+#team-home .home-wrapper {
     position: absolute;
     left: 0px;
     right: 0px;
