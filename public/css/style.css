@@ -167,7 +167,7 @@ ul, ol {
     opacity: .2;
     background: #1C1D21;
 }
-.teamBg{
+/* .teamBg{
     position: absolute;
     left: 0;
     top: 0;
@@ -175,10 +175,10 @@ ul, ol {
     bottom: 0;
     z-index: -1;
     background-position: center;
-    /* background-size: cover; */
-    /* background-attachment: fixed; */
+    background-size: cover;
+    background-attachment: fixed;
     background-size: 1279px 400px;
-}
+} */
 
 /* --  section header  -- */
 
@@ -682,7 +682,7 @@ header {
 .team {
     position: relative;
     display: inline-block;
-    background-color: white;
+    background-color: #F7F7F7;
     padding: 40px 20px;
     margin-top: 15px;
     margin-bottom: 15px;
