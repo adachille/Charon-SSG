@@ -28,10 +28,9 @@ var transporter = nodemailer.createTransport({
 app.post('/contact', function(req, res) {
   // setup email data with unicode symbols
   let mailOptions = {
-    // from: `"${req.body.name}" <${req.body.email}>`, // sender address
-    from:`${req.body.email}`,
-    // to: `charonssg@gmail.com`, // list of receivers
-    to: 'charonssg@gmail.com',
+    
+    from:`${req.body.email}`, // sender address
+    to: 'charonssg@gmail.com', // list of receivers
     subject: `${req.body.subject}`, // Subject line
     html: `<h4>From: ${req.body.name}</h4>
       <h4>Email: ${req.body.email}</h4>
