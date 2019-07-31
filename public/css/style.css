@@ -167,7 +167,18 @@ ul, ol {
     opacity: .2;
     background: #1C1D21;
 }
-
+/* .teamBg{
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-size: 1279px 400px;
+} */
 
 /* --  section header  -- */
 
@@ -190,6 +201,51 @@ ul, ol {
     margin: 10px auto 0px;
 }
 
+/* -- Table -- */
+.table-head {
+    /* width:600px; */
+    text-align: center;
+}
+#table-container {
+    margin:6%;
+}
+table {
+    vertical-align: "top";
+    border:"0";
+    border-spacing: 1px;
+    padding:3px;
+    width:100%;
+}
+/* .table-pdf{
+    width:60px;
+} */
+th, td {
+    border-collapse: collapse;
+    border-bottom: 1px solid;
+    padding: 10px 30px 10px 0px;
+    /* padding-right:10px; */
+    text-align: left;
+}
+.table a i {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 3px;
+    /* background-color: rgb(23,54,123); */
+    /* color:#FFF; */
+    color:black;
+    margin-right: 1.5rem;
+}
+/* #table-date {
+    valign:"top";
+    nowrap:"nowrap";
+} */
+/* -- About -- */
+.about h2{
+    text-align: center;
+}
 /* --  Input  -- */
 
 input[type="text"], input[type="email"], input[type="password"], input[type="number"], input[type="date"], input[type="url"], input[type="tel"], textarea {
@@ -560,12 +616,20 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focu
 header {
     position: relative;
 }
-
+#team-home {
+    height: 60vh;
+}
 #home {
     height: 100vh;
 }
 
 #home .home-wrapper {
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+}
+#team-home .home-wrapper {
     position: absolute;
     left: 0px;
     right: 0px;
@@ -618,7 +682,7 @@ header {
 .team {
     position: relative;
     display: inline-block;
-    background-color: white;
+    background-color: #F7F7F7;
     padding: 40px 20px;
     margin-top: 15px;
     margin-bottom: 15px;
