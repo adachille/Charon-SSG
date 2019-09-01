@@ -3,6 +3,7 @@ const path = require('path');
 var app = express();
 var bodyParser = require('body-parser')
 const PORT = process.env.PORT || 5000;
+const CSSG_EMAIL_PW = process.env.CSSG_EMAIL_PW || '';
 const nodemailer = require('nodemailer');
 
 // Set up public/static stuff
@@ -17,15 +18,19 @@ app.use(bodyParser.json());       // to support JSON-encoded bodies
 app.use(bodyParser.urlencoded({     // to support URL-encoded bodies
   extended: true
 }));
+
 var transporter = nodemailer.createTransport({
+  host: 'smtp.gmail.com',
   service: 'gmail',
   auth: {
-         user: 'charonssg@gmail.com',
-         pass: process.env.CSSG_EMAIL_PW
-     }
+    user: 'charonssg@gmail.com',
+    pass: CSSG_EMAIL_PW
+  }
 });
+
 // Set up the route handler
 app.post('/contact', function(req, res) {
+  // verify connection configuration
   // setup email data with unicode symbols
   let mailOptions = {
     
@@ -44,8 +49,8 @@ app.post('/contact', function(req, res) {
     if (error) {
         return console.log(error);
     }
-    // Preview only available when sending through an Ethereal account
   });
+
   res.sendFile(path.join(__dirname+'/public/index.html'));
 });
 

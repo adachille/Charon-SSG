@@ -17,10 +17,11 @@ Table Of Contents
 5 > Team
 6 > Publications
 7 > Contact
-8 > Footer
-9 > Responsive
-10 > Back to top
-11 > Preloader
+8 > Updates
+9 > Footer
+10 > Responsive
+11 > Back to top
+12 > Preloader
 
 ------------------------------------*/
 
@@ -904,6 +905,13 @@ header {
     .publications .publications-content {
         height: 26rem;
     }
+}
+
+/*------------------------------------*\
+	Updates
+\*------------------------------------*/
+.updates-table th {
+    color: #10161A;
 }
 
 /*------------------------------------*\
