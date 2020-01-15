@@ -117,7 +117,7 @@ ul, ol {
     padding-bottom: 100px;
 }
 .section-description {
-    margin-bottom: 3rem;
+    margin-bottom: 5rem;
     text-align: center;
 }
 .section-description-txt {
@@ -688,9 +688,9 @@ header {
     position: relative;
     display: inline-block;
     background-color: #F7F7F7;
-    padding: 40px 20px;
+    padding: 10px 20px;
     margin-top: 15px;
-    margin-bottom: 15px;
+    /* margin-bottom: 15px; */
 }
 
 .team::after {
@@ -750,7 +750,7 @@ header {
 }
 
 .team .team-content .team-heading {
-    text-align: center;
+    text-align: left;
     margin-bottom: 1.5rem;
 }
 
@@ -794,12 +794,12 @@ header {
 }
 @media only screen and (min-width: 1200px) {
     .team .team-content .team-description {
-        height: 18rem;
+        height: 13rem;
     }
 }
 @media only screen and (min-width: 1000px) and (max-width: 1200px) {
     .team .team-content .team-description {
-        height: 21rem;
+        height: 16rem;
     }
     .first-team {
         margin-left: 4.16%
@@ -807,7 +807,7 @@ header {
 }
 @media only screen and (min-width: 767px) and (max-width: 1000px) {
     .team .team-content .team-description {
-        height: 28.5rem;
+        height: 23.5rem;
     }
     .first-team {
         margin-left: 4.16%
